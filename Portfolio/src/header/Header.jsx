@@ -111,7 +111,7 @@ function Header() {
           <div className="font-thin text-xs">&#x2715; </div>
         </div>
       </div>
-      <div className="text-center absolute bottom-16 translate-x-[-50%] left-1/2">
+      <div className="text-center absolute bottom-40 translate-x-[-50%] left-1/2">
         scroll down
       </div>
     </div>
