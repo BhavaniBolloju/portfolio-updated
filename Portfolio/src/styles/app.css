@@ -507,29 +507,17 @@ video {
 .right-5 {
   right: 1.25rem;
 }
-.bottom-40 {
-  bottom: 10rem;
+.bottom-20 {
+  bottom: 5rem;
 }
 .left-1\/2 {
   left: 50%;
 }
-.bottom-20 {
-  bottom: 5rem;
-}
 .m-auto {
   margin: auto;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
-.ml-2 {
-  margin-left: 0.5rem;
-}
-.mt-8 {
-  margin-top: 2rem;
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .inline-block {
   display: inline-block;
@@ -567,12 +555,6 @@ video {
 .w-\[0\.3px\] {
   width: 0.3px;
 }
-.w-\[70\%\] {
-  width: 70%;
-}
-.w-\[60\%\] {
-  width: 60%;
-}
 .w-\[50\%\] {
   width: 50%;
 }
@@ -580,17 +562,14 @@ video {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .flex-col {
   flex-direction: column;
 }
-.items-start {
-  align-items: flex-start;
-}
 .items-center {
   align-items: center;
-}
-.justify-center {
-  justify-content: center;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -598,40 +577,16 @@ video {
 .self-center {
   align-self: center;
 }
-.bg-\[\#234d3a\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 77 58 / var(--tw-bg-opacity));
-}
 .bg-\[\#c6ac77\] {
   --tw-bg-opacity: 1;
   background-color: rgb(198 172 119 / var(--tw-bg-opacity));
 }
-.bg-\[\#dac9a7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 201 167 / var(--tw-bg-opacity));
-}
-.bg-\[\#f4eee4\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 238 228 / var(--tw-bg-opacity));
-}
-.bg-\[\#ccb485\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(204 180 133 / var(--tw-bg-opacity));
-}
-.bg-\[\#556a64\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(85 106 100 / var(--tw-bg-opacity));
-}
-.bg-\[\#acbdb8\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(172 189 184 / var(--tw-bg-opacity));
-}
-.bg-\[\#dbe3e1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 227 225 / var(--tw-bg-opacity));
-}
 .p-5 {
   padding: 1.25rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 .px-16 {
   padding-left: 4rem;
@@ -640,17 +595,14 @@ video {
 .pt-16 {
   padding-top: 4rem;
 }
-.pt-44 {
-  padding-top: 11rem;
-}
 .pt-48 {
   padding-top: 12rem;
 }
 .text-center {
   text-align: center;
 }
-.text-\[64px\] {
-  font-size: 64px;
+.text-\[60px\] {
+  font-size: 60px;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -658,10 +610,6 @@ video {
 }
 .text-\[80px\] {
   font-size: 80px;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 .font-thin {
   font-weight: 100;
@@ -672,20 +620,11 @@ video {
 .font-\[600\] {
   font-weight: 600;
 }
-.font-\[700\] {
-  font-weight: 700;
-}
 .leading-10 {
   line-height: 2.5rem;
 }
 .leading-\[85px\] {
   line-height: 85px;
-}
-.leading-4 {
-  line-height: 1rem;
-}
-.leading-8 {
-  line-height: 2rem;
 }
 .leading-6 {
   line-height: 1.5rem;
@@ -693,38 +632,15 @@ video {
 .tracking-tight {
   letter-spacing: -0.025em;
 }
-.tracking-normal {
-  letter-spacing: 0em;
-}
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
 .tracking-wider {
   letter-spacing: 0.05em;
 }
-.text-\[\#c6ac77\] {
+.text-\[\#dac9a7\] {
   --tw-text-opacity: 1;
-  color: rgb(198 172 119 / var(--tw-text-opacity));
+  color: rgb(218 201 167 / var(--tw-text-opacity));
 }
-.text-\[\#eee6d7\] {
-  --tw-text-opacity: 1;
-  color: rgb(238 230 215 / var(--tw-text-opacity));
-}
-.text-\[\#4f4530\] {
-  --tw-text-opacity: 1;
-  color: rgb(79 69 48 / var(--tw-text-opacity));
-}
-.text-\[\#fff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\#d5c29b\] {
-  --tw-text-opacity: 1;
-  color: rgb(213 194 155 / var(--tw-text-opacity));
-}
-.text-\[\#cbb383\] {
-  --tw-text-opacity: 1;
-  color: rgb(203 179 131 / var(--tw-text-opacity));
+.opacity-80 {
+  opacity: 0.8;
 }
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -738,9 +654,11 @@ body {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Roboto", sans-serif; */
 
-  background-color: #234d3a;
+  /* background-color: #234d3a; */
   background-color: #172c2d;
-  background-color: #224244;
-  /* color: #dac9a7; */
+  /* background-color: #224244; */
+  background-color: #1d3738;
+
   color: #c6ac77;
+  /* color: #e3f2eb; */
 }

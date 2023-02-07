@@ -14,7 +14,8 @@ const sentence = {
     opacity: 1,
     transition: {
       staggerChildren: 0.1,
-      delayChildren: 0.04 * 1,
+      staggerDirection: 1,
+      delayChildren: 0.03 * 1,
     },
   }),
 };
@@ -22,10 +23,13 @@ const sentence = {
 const letter = {
   hidden: {
     opacity: 0,
-    y: -40,
-    x: -5,
+    y: 10,
+    x: 40,
+
+    // transform: "scale(1.3)",
+
     transition: {
-      // type: "spring",
+      type: "spring",
       damping: 10,
       stiffness: 100,
     },
@@ -33,8 +37,10 @@ const letter = {
   visible: {
     opacity: 1,
     y: 0,
+    // transform: "scale(1)",
     transition: {
-      // type: "spring",
+      type: "spring",
+
       damping: 10,
       stiffness: 100,
     },
@@ -51,7 +57,7 @@ const longText = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 2,
+      delay: 2.5,
       duration: 1.5,
     },
   },
@@ -60,7 +66,7 @@ const longText = {
 function Header() {
   return (
     <div className="  relative h-[100vh] ">
-      <div className="absolute left-5 top-[25%] flex flex-col items-center text-[#c6ac77] gap-2">
+      <div className="absolute left-5 top-[25%] flex flex-col items-center gap-2">
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
@@ -70,9 +76,9 @@ function Header() {
 
         <div className="w-[0.3px] h-40 bg-[#c6ac77]"></div>
       </div>
-      <div className="flex flex-col  text-[#c6ac77] items-center pt-48">
+      <div className="flex flex-col  items-center pt-48">
         <motion.div
-          className="text-[80px] font-[400] leading-[85px]"
+          className="text-[80px] font-[400] leading-[85px] "
           variants={sentence}
           initial="hidden"
           animate="visible"
@@ -101,41 +107,22 @@ function Header() {
               </motion.span>
             );
           })}
-
-          {/* <div className="text-xl mt-5 ml-2 font-[400] text-[#eee6d7]"> */}
-          {/* {line3.split("").map((char, i) => {
-              return (
-                <motion.span
-                  className="inline-block"
-                  key={char + "_" + i}
-                  variants={letter}
-                >
-                  {char === " " ? <span>&nbsp;</span> : char}
-                </motion.span>
-              );
-            })} */}
-          {/* </div> */}
         </motion.div>
         <motion.div
           variants={longText}
           initial="hidden"
           animate="visible"
-          className="w-[50%] p-5 leading-6 tracking-wider text-[#cbb383]"
+          className="w-[50%] p-5 leading-6 tracking-wider"
         >
           I'm a
-          <span className="font-[600] text-[#d5c29b]">
+          <span className="font-[600] text-[#dac9a7]">
             {" "}
             front-end web developer
           </span>
           , I love building beautiful and interactive web sites, exploring and
           learning new stuff.
-          <span className="font-[600] text-[#d5c29b]">
-            {" "}
-            I'm a life long learner
-          </span>
-          .
         </motion.div>
-        <div className="absolute right-5 top-[25%] flex flex-col items-center text-[#c6ac77] gap-2">
+        <div className="absolute right-5 top-[25%] flex flex-col items-center gap-2">
           <div className="w-[0.3px] h-40 bg-[#c6ac77]"></div>
           <div className="font-thin text-xs">&#x2715; </div>
           <div className="font-thin text-xs">&#x2715; </div>

@@ -6,9 +6,11 @@ body {
   font-family: "Montserrat", sans-serif;
   /* font-family: "Roboto", sans-serif; */
 
-  background-color: #234d3a;
+  /* background-color: #234d3a; */
   background-color: #172c2d;
-  background-color: #224244;
-  /* color: #dac9a7; */
+  /* background-color: #224244; */
+  background-color: #1d3738;
+
   color: #c6ac77;
+  /* color: #e3f2eb; */
 }
