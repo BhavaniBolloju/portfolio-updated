@@ -10,3 +10,15 @@ body {
   background-color: #164438;
   color: #c6ac77;
 }
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
