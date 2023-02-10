@@ -3,11 +3,11 @@ import React from "react";
 function About() {
   return (
     <div className=" relative pb-24 mb-40 m-auto">
-      <h2 className="text-[60px] mb-8 text-center self-center">
+      <h2 className=" mb-8 text-center self-center">
         <span className="opacity-80  px-5">About Me</span>
       </h2>
 
-      <section className="">
+      <section>
         <div className="relative w-[75%] h-[100px] m-auto">
           <div className="absolute top-10 left-5 h-[150px] w-[1px] bg-[#c6ac77]"></div>
           <div className="absolute top-10 left-5 h-[.3px] w-[150px] bg-[#c6ac77]"></div>

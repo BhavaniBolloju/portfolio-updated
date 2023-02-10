@@ -23,8 +23,8 @@ const sentence = {
 const letter = {
   hidden: {
     opacity: 0,
-    y: 10,
-    x: 40,
+    y: -60,
+    x: 0,
 
     // transform: "scale(1.3)",
 
@@ -58,6 +58,20 @@ const longText = {
     y: 0,
     transition: {
       delay: 2.5,
+      duration: 1.5,
+    },
+  },
+};
+const scroll = {
+  hidden: {
+    opacity: 0,
+    y: -100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 3,
       duration: 1.5,
     },
   },
@@ -136,9 +150,29 @@ function Header() {
         <div className="font-thin text-xs">&#x2715; </div>
       </div>
 
-      <div className="text-center absolute bottom-20 translate-x-[-50%] left-1/2">
-        scroll down
-      </div>
+      <motion.div
+        variants={scroll}
+        initial="hidden"
+        animate="visible"
+        className="text-center absolute bottom-16  translate-x-[-50%] left-1/2 flex flex-col items-center gap-3"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="w-10 h-10 animate-bounce text-[#0f3329] p-2 bg-[#c6ac77]/10 backdrop-blur-md rounded-full"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
+          />
+        </svg>
+
+        <span className="text-[#c6ac77]/70">scroll down</span>
+      </motion.div>
     </div>
   );
 }

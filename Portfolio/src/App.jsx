@@ -1,14 +1,14 @@
 import React from "react";
-import Header from "./header/Header";
-import About from "./about/About";
-import Project from "./project/Project";
+import Header from "./components/header/Header";
+import About from "./components/about/About";
+import Projects from "./components/project/Projects";
 
 function App() {
   return (
     <div className="relative">
       <Header />
       <About />
-      <Project />
+      <Projects />
     </div>
   );
 }
