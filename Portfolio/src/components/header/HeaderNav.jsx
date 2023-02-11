@@ -5,8 +5,8 @@ import resume from "../../Images/bhavani.pdf";
 function HeaderNav() {
   return (
     <div>
-      <header className="items-center flex justify-center w-[80%] m-auto realtive">
-        <div className="flex justify-between mt-16 p-3 items-center fixed nav-header z-50">
+      <header className="items-center flex justify-center w-[80%] m-auto realtive h-16">
+        <div className="flex justify-between p-3 items-center nav-header z-50 ">
           <img src={logo} className="w-12" alt="" />
           <ul className="flex items-center gap-x-10 text-sm font-semibold">
             <li className="rounded-sm bg-[#cbb383]/80 text-[#12372d] px-2 py-1 hover:cursor-pointer hover:bg-[#c6ac77]">

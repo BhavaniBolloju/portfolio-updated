@@ -7,15 +7,45 @@ import {
   DiReact,
   DiBootstrap,
 } from "react-icons/di";
+
 import { SiRedux, SiTailwindcss } from "react-icons/si";
+
+import { motion } from "framer-motion";
+
+const variants = {
+  offscreen: {
+    y: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 1,
+    },
+  },
+};
 
 function Skills() {
   return (
-    <div className="w-[70%] m-auto pb-20">
-      <h3 className="text-center pb-14">
+    <section className="w-[70%] m-auto pb-32">
+      <motion.h3
+        variants={variants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="text-center pb-14"
+      >
         Languages & Tools i use to build websites
-      </h3>
-      <ul className="px-20 flex items-center justify-between  gap-5 text-sm">
+      </motion.h3>
+      <motion.ul
+        variants={variants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="px-20 flex flex-wrap  items-center justify-between  gap-5 text-sm"
+      >
         <li className="flex flex-col gap-2 items-center">
           <DiHtml5 className="text-3xl" />
           <span className="text-[#dac9a7]">HTML</span>
@@ -49,8 +79,8 @@ function Skills() {
           <DiBootstrap className="text-3xl" />
           <span className="text-[#dac9a7]">BOOTSTRAPE</span>
         </li>
-      </ul>
-    </div>
+      </motion.ul>
+    </section>
   );
 }
 

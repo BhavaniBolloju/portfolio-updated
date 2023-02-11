@@ -9,15 +9,19 @@ body {
 
   background-color: #164438;
   color: #c6ac77;
+  /* width: 100vw;
+  height: 100vh; */
+  overflow: auto;
 }
 
 h2 {
   font-size: 48px;
-  padding: 20px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 15spx;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -28,4 +32,18 @@ h3 {
   position: fixed;
   width: inherit;
   height: inherit;
+}
+.height {
+  height: inherit;
+}
+
+.position {
+  transform: translateX(-50%) !important;
+}
+
+@media screen and (min-width: 1280px) {
+}
+
+section {
+  /* padding-bottom: 20px !important; */
 }

@@ -1,13 +1,34 @@
 import React from "react";
 import { MdOutlineClose } from "react-icons/md";
+import { motion } from "framer-motion";
 
+const variants = {
+  offscreen: {
+    y: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 0.8,
+    },
+  },
+};
 export function OuterBox(props) {
   return (
-    <section className="w-[60%] m-auto mt-20 text-[#0f3329]">
-      <div className="flex h-[350px] w-[100%] rounded-lg p-3 gap-1 bg-[#A79864] ">
+    <motion.section
+      variants={variants}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true }}
+      className="w-[60%] max-xl:w-[70%] max-lg:w-[80%] m-auto mt-20 text-[#0f3329]"
+    >
+      <div className="flex h-[350px] w-[100%] rounded-lg p-3 gap-1 bg-[#A79864] max-md:flex-col max-md:h-[100%] max-md:gap-5 ">
         {props.children}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -21,7 +42,7 @@ export function ImagesCard(props) {
 
 export function BackDrop(props) {
   return (
-    <div className="absolute top-0 left-0 translate-y-[-100%]  group-hover/item:translate-y-0 bg-[#1e6853]/80 duration-300  ease-in delay-75  backdrop-opacity-100 backdrop-blur-xl h-full p-4 group-hover/item:transition-all w-full grayscale-1 leading-6">
+    <div className="absolute top-0 left-0 translate-y-[-100%]  group-hover/item:translate-y-0 bg-[#1e6853]/80 duration-300  ease-in delay-75  backdrop-opacity-100 backdrop-blur-xl h-full p-4 group-hover/item:transition-all w-full grayscale-1 leading-6 overflow-y-scroll scrollbar-hide py-4">
       {props.children}
     </div>
   );
@@ -29,7 +50,7 @@ export function BackDrop(props) {
 
 export function BackDropContent({ about, challenge }) {
   return (
-    <div className="text-[#e6ca9c] overflow-y-scroll scrollbar-hide">
+    <div className="text-[#e6ca9c] overflow-scroll scrollbar-hide">
       <h4 className="font-semibold mb-2">About: </h4>
       <p className="mb-3">{about}</p>
       <h4 className="font-semibold mb-2">Challenging Part:</h4>
