@@ -41,23 +41,17 @@ function Projects() {
         challenge="Representing Daily weather data on graph was bit challenging,
         however figuring out and learning rechars was fun."
       />
-      {/* project-2 */}
-      <OuterBox>
-        <ImagesCard>
-          <Images img1={recipe_2} img2={recipe_3} />
-          <BackDrop>
-            <BackDropContent
-              about="Recipe is a single page application created using React Js. Renders different kinds of popular and vegetarian recipes with detailed instructions and all ingredients needed to prepare each item"
-              challenge="Layout part was bit challenging but framer motion made it less difficult"
-            />
-          </BackDrop>
-        </ImagesCard>
-        <Header
-          number="02."
-          heading="Recipe"
-          link2="https://recipe-8cf96.web.app/"
-        />
-      </OuterBox>
+      <Project
+        number="02."
+        heading="Recipe"
+        link1=""
+        link2="https://recipe-8cf96.web.app/"
+        img1={recipe_2}
+        img2={recipe_3}
+        about="Recipe is a single page application created using React Js. Renders different kinds of popular and vegetarian recipes with detailed instructions and all ingredients needed to prepare each item"
+        challenge="Layout part was bit challenging but framer motion made it less difficult"
+      />
+
       <Project
         number="03."
         heading="Memory Game"
@@ -69,22 +63,17 @@ function Projects() {
         challenge="coming up with the logic was the difficult part."
       />
 
-      <OuterBox>
-        <ImagesCard>
-          <Images img1={quote_1} img2={quote_2} />
-          <BackDrop>
-            <BackDropContent
-              about="Quotes is a Single page application created using React js. It has features of adding new quote and comment on a respective quote, allows to add new quote, stores the data on firebase and fetch data whenever needed."
-              challenge="I have learnt react routers following a tutorial, this porject is a part of learning process. Understaing the routes was bit confusing but it was fun learning"
-            />
-          </BackDrop>
-        </ImagesCard>
-        <Header
-          number="04."
-          heading="Quotes"
-          link2="https://quotes-bb6b0.web.app/allQuotes"
-        />
-      </OuterBox>
+      <Project
+        number="04."
+        heading="Quotes"
+        link1=""
+        link2="https://quotes-bb6b0.web.app/allQuotes"
+        img1={quote_1}
+        img2={quote_2}
+        about="Quotes is a Single page application created using React js. It has features of adding new quote and comment on a respective quote, allows to add new quote, stores the data on firebase and fetch data whenever needed."
+        challenge="I have learnt react routers following a tutorial, this porject is a part of learning process. Understaing the routes was bit confusing but it was fun learning."
+      />
+
       <Project
         number="05."
         heading="Twitter Clone"
