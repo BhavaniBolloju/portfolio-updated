@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className=" relative pb-24 mb-40 m-auto">
+    <div className=" relative pt-24 pb-20 mb-40 m-auto">
       <h2 className=" mb-8 text-center self-center">
         <span className="opacity-80  px-5">About Me</span>
       </h2>

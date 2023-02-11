@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineClose } from "react-icons/md";
 
 export function OuterBox(props) {
   return (
@@ -81,6 +82,23 @@ export const Images = function ({ img1, img2 }) {
           className="rounded-lg object-cover shadow-lg"
         />
       </div>
+    </div>
+  );
+};
+
+// #BDC581
+// #164438
+
+export const PopUpbox = function (props) {
+  return (
+    <div className="fixed top-[10%] bg-[#BDC581] text-[#164438] left-[50%] translate-x-[-50%] px-8 py-4 text-center rounded-md shadow-xl">
+      <MdOutlineClose
+        onClick={() => {
+          props.onClose(null);
+        }}
+        className="absolute text-sm top-2 left-2 hover:cursor-pointer hover:bg-[#164438]  hover:text-[#BDC581] rounded-full"
+      />
+      {props.children}
     </div>
   );
 };
