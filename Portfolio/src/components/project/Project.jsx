@@ -18,9 +18,11 @@ function Project({
   about,
   challenge,
 }) {
+  console.log(heading, link1);
+
   return (
     <OuterBox>
-      <Header number={number} heading={heading} link2={link2} />
+      <Header number={number} heading={heading} link2={link2} link1={link1} />
       <ImagesCard>
         <Images img1={img1} img2={img2} />
         <BackDrop>

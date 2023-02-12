@@ -72,10 +72,13 @@ function Footer() {
           viewport={{ once: true }}
           className="flex items-center -mt-14 gap-4 mb-8"
         >
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/bhavani-bolloju-9ba34b241/"
+            target="_blank"
+          >
             <AiFillLinkedin className="text-xl" />
           </a>
-          <a href="">
+          <a href="https://github.com/saMruBa" target="_blank">
             <AiFillGithub className="text-xl" />
           </a>
         </motion.div>
