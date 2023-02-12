@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { PopUpbox } from "../Ui/OuterBox";
 import { motion } from "framer-motion";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const variants = {
   offscreen: {
@@ -46,6 +47,7 @@ function Footer() {
 
   return (
     <motion.section
+      id="footer"
       variants={variants}
       initial="offscreen"
       whileInView="onscreen"
@@ -62,6 +64,21 @@ function Footer() {
         >
           Would love to hear from you
         </motion.h3>
+
+        <motion.div
+          variants={variants}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true }}
+          className="flex items-center -mt-14 gap-4 mb-8"
+        >
+          <a href="">
+            <AiFillLinkedin className="text-xl" />
+          </a>
+          <a href="">
+            <AiFillGithub className="text-xl" />
+          </a>
+        </motion.div>
         <motion.form
           variants={variants}
           initial="offscreen"
@@ -73,25 +90,25 @@ function Footer() {
           <input
             type="text"
             name="name"
-            className="border-b p max-sm:basis-[100%] basis-[48%] border-[#164438]/60 py-2 px-1 bg-[#D5DAB0] rounded-sm focus:outline-none"
+            className="border-b p max-sm:basis-[100%] basis-[48%] border-[#164438]/60 p-2 bg-[#D5DAB0] rounded-sm focus:outline-none"
             placeholder="Name"
           />
           <input
             type="Email"
             name="email"
-            className="border-b max-sm:basis-[100%] rounded-sm basis-[48%] border-[#164438]/60 py-2 px-1 bg-[#D5DAB0] focus:outline-none"
+            className="border-b max-sm:basis-[100%] rounded-sm basis-[48%] border-[#164438]/60 p-2 bg-[#D5DAB0] focus:outline-none"
             placeholder="Email"
           />
           <input
             type="text"
             name="subject"
-            className="border-b rounded-sm basis-[100%] border-[#164438]/60 py-2 px-1 bg-[#D5DAB0] focus:outline-none"
+            className="border-b rounded-sm basis-[100%] border-[#164438]/60 p-2 bg-[#D5DAB0] focus:outline-none"
             placeholder="Subject"
           />
           <textarea
             name="message"
             placeholder="Message"
-            className="border-b rounded-sm basis-[100%] border-[#164438]/60 py-2 px-1 bg-[#D5DAB0] focus:outline-none resize-none"
+            className="border-b rounded-sm basis-[100%] border-[#164438]/60 p-2 bg-[#D5DAB0] focus:outline-none resize-none"
             rows="5"
           />
         </motion.form>
