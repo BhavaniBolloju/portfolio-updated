@@ -79,21 +79,21 @@ const scroll = {
 
 function Header() {
   return (
-    <div className="relative h-[100vh] pb-20">
-      <div className="absolute left-5 top-[25%] flex flex-col items-center gap-2">
+    <section className="relative py-36 h-[90vh]">
+      <div className="absolute left-5 top-[20%] flex flex-col items-center gap-2">
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
-        <div className="font-thin text-xs">&#x2715; </div>
-        <div className="font-thin text-xs">&#x2715; </div>
+        <div className="font-thin text-xs max-md:hidden">&#x2715; </div>
+        <div className="font-thin text-xs max-md:hidden ">&#x2715; </div>
 
-        <div className="w-[0.3px] h-40 bg-[#c6ac77]"></div>
+        <div className="w-[0.3px] h-40 max-md:h-32 bg-[#c6ac77]"></div>
       </div>
-      <div className="flex flex-col items-center pt-48 ">
-        <div className="flex justify-center items-center flex-col ">
+      <div className="w-[60%] max-xl:w-[70%] m-auto flex items-center justify-center">
+        <div className="flex flex-col justify-center">
           <motion.div
-            className="text-[80px] font-[400] leading-[90px]"
+            className="text-[80px] max-xl:text-[70px] max-lg:text-[50px]  max-sm:text-[35px] max-lg:leading-[58px] font-[400] leading-[90px]"
             variants={sentence}
             initial="hidden"
             animate="visible"
@@ -127,7 +127,7 @@ function Header() {
             variants={longText}
             initial="hidden"
             animate="visible"
-            className="w-[80%] mt-6 pl-3 ml-auto self-center text-lg tracking-wider"
+            className="mt-5 text-lg tracking-wider max-md:text-sm"
           >
             I'm a
             <span className="font-[600] text-[#dac9a7]">
@@ -140,21 +140,21 @@ function Header() {
         </div>
       </div>
 
-      <div className="absolute right-5 top-[25%] flex flex-col items-center gap-2">
-        <div className="w-[0.3px] h-40 bg-[#c6ac77]"></div>
+      <div className="absolute right-5 top-[20%] flex flex-col items-center gap-2">
+        <div className="w-[0.3px] h-40 max-md:h-32 bg-[#c6ac77]"></div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
-        <div className="font-thin text-xs">&#x2715; </div>
-        <div className="font-thin text-xs">&#x2715; </div>
+        <div className="font-thin text-xs max-md:hidden">&#x2715; </div>
+        <div className="font-thin text-xs max-md:hidden">&#x2715; </div>
       </div>
 
       <motion.div
         variants={scroll}
         initial="hidden"
         animate="visible"
-        className="text-center absolute bottom-16  translate-x-[-50%] left-1/2 flex flex-col items-center gap-3"
+        className="text-center absolute bottom-10  left-1/2 flex flex-col items-center gap-3 position"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ function Header() {
 
         <span className="text-[#c6ac77]/70">scroll down</span>
       </motion.div>
-    </div>
+    </section>
   );
 }
 

@@ -19,15 +19,36 @@ import {
   BackDropContent,
 } from "../Ui/OuterBox";
 import Project from "./Project";
+import { motion } from "framer-motion";
 
+const variants = {
+  offscreen: {
+    y: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "tween",
+      duration: 0.8,
+    },
+  },
+};
 // #A78D64
 
 function Projects() {
   return (
-    <div className=" pb-24 ">
-      <h2 className="text-center">
+    <section className=" pb-24 ">
+      <motion.h2
+        variants={variants}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        className="text-center"
+      >
         <span>Some of my works</span>
-      </h2>
+      </motion.h2>
 
       <Project
         number="01."
@@ -84,7 +105,7 @@ function Projects() {
         about=" In case you want to check insides of the project, i have created dummy login credentails, email = itachi@gmail.com //password = itachi@123, to login to twitter-clone "
         challenge="From layout to using firebase as backend everything about this project was challenging. I followed few tutorial on how to use firebase database. Nested routes particulary the profile page was difficult, i followed react routers documentation, which helped me to stucture the page as i wanted."
       />
-    </div>
+    </section>
   );
 }
 
