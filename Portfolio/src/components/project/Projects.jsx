@@ -53,7 +53,7 @@ function Projects() {
       <Project
         number="01."
         heading="Weather App"
-        link1=""
+        link1="https://github.com/saMruBa/Weather-App"
         link2="https://user-authentication-e7794.web.app/"
         img1={weather_1}
         img2={weather_2}
@@ -65,7 +65,7 @@ function Projects() {
       <Project
         number="02."
         heading="Recipe"
-        link1=""
+        link1="https://github.com/saMruBa/Recipe-App"
         link2="https://recipe-8cf96.web.app/"
         img1={recipe_2}
         img2={recipe_3}
@@ -76,7 +76,7 @@ function Projects() {
       <Project
         number="03."
         heading="Memory Game"
-        link1=""
+        link1="https://github.com/saMruBa/Memory-game"
         link2="https://memory---game.web.app"
         img1={memory_1}
         img2={memory_2}
@@ -87,7 +87,7 @@ function Projects() {
       <Project
         number="04."
         heading="Quotes"
-        link1=""
+        link1="https://github.com/saMruBa/Quotes"
         link2="https://quotes-bb6b0.web.app/allQuotes"
         img1={quote_1}
         img2={quote_2}
@@ -98,7 +98,7 @@ function Projects() {
       <Project
         number="05."
         heading="Twitter Clone"
-        link1=""
+        link1="https://github.com/saMruBa/twitter-clone"
         link2="https://twitter-clone-6f949.web.app/signin"
         img1={twitter_1}
         img2={twitter_2}
