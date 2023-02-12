@@ -79,7 +79,7 @@ const scroll = {
 
 function Header() {
   return (
-    <section className="relative py-36 h-[90vh]">
+    <section className="relative py-36 h-[90vh] max-sm:h-[60vh]  max-md:h-[80vh]">
       <div className="absolute left-5 top-[20%] flex flex-col items-center gap-2">
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>

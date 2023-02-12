@@ -45,6 +45,10 @@ h3 {
   transform: translateX(-50%) !important;
 }
 
+.positionY {
+  transform: translateY(-50%) !important;
+}
+
 @media screen and (min-width: 1280px) {
 }
 

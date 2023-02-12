@@ -18,7 +18,7 @@ function Project({
   about,
   challenge,
 }) {
-  console.log(heading, link1);
+  // console.log(heading, link1);
 
   return (
     <OuterBox>
