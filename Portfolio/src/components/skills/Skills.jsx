@@ -44,39 +44,39 @@ function Skills() {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
-        className="px-20 flex flex-wrap  items-center justify-between  gap-5 text-sm"
+        className="px-20 max-sm:px-5 flex flex-wrap items-center justify-center  gap-8 text-sm"
       >
         <li className="flex flex-col gap-2 items-center">
-          <DiHtml5 className="text-3xl" />
+          <DiHtml5 className="text-5xl" />
           <span className="text-[#dac9a7]">HTML</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <DiCss3 className="text-3xl" />
+          <DiCss3 className="text-5xl" />
           <span className="text-[#dac9a7]">CSS</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <DiSass className="text-3xl" />
+          <DiSass className="text-5xl" />
           <span className="text-[#dac9a7]">SASS</span>
         </li>
 
         <li className="flex flex-col gap-2 items-center">
-          <DiJavascript className="text-3xl" />
+          <DiJavascript className="text-5xl" />
           <span className="text-[#dac9a7]">JavaScript</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <DiReact className="text-3xl" />
+          <DiReact className="text-5xl" />
           <span className="text-[#dac9a7]">REACT</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <SiRedux className="text-2xl" />
+          <SiRedux className="text-5xl" />
           <span className="text-[#dac9a7]">REDUX</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <SiTailwindcss className="text-2xl" />
+          <SiTailwindcss className="text-5xl" />
           <span className="text-[#dac9a7]">TAILWIND</span>
         </li>
         <li className="flex flex-col gap-2 items-center">
-          <DiBootstrap className="text-3xl" />
+          <DiBootstrap className="text-5xl" />
           <span className="text-[#dac9a7]">BOOTSTRAPE</span>
         </li>
       </motion.ul>

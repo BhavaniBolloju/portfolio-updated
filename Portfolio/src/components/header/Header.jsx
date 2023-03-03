@@ -79,7 +79,7 @@ const scroll = {
 
 function Header() {
   return (
-    <section className="relative py-36 h-[90vh] max-sm:h-[60vh]  max-md:h-[80vh]">
+    <section className="relative py-32  max-sm:pt-5 max-sm:pb-21 h-[80vh] max-sm:h-[65vh]  max-md:h-[80vh] flex items-center justify-center">
       <div className="absolute left-5 top-[20%] flex flex-col items-center gap-2">
         <div className="font-thin text-xs">&#x2715; </div>
         <div className="font-thin text-xs">&#x2715; </div>
@@ -93,7 +93,7 @@ function Header() {
       <div className="w-[60%] max-xl:w-[70%] m-auto flex items-center justify-center">
         <div className="flex flex-col justify-center">
           <motion.div
-            className="text-[80px] max-xl:text-[70px] max-lg:text-[50px]  max-sm:text-[35px] max-lg:leading-[58px] font-[400] leading-[90px]"
+            className="text-[80px] max-xl:text-[70px] max-lg:text-[50px]  max-sm:text-[35px] max-lg:leading-[50px] font-[400] leading-[80px]"
             variants={sentence}
             initial="hidden"
             animate="visible"
@@ -154,7 +154,7 @@ function Header() {
         variants={scroll}
         initial="hidden"
         animate="visible"
-        className="text-center absolute bottom-10  left-1/2 flex flex-col items-center gap-3 position"
+        className="text-center absolute bottom-0  left-1/2 flex flex-col items-center max-sm:mt-5 gap-2 position"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

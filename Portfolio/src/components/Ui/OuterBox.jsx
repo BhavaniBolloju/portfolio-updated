@@ -42,7 +42,7 @@ export function ImagesCard(props) {
 
 export function BackDrop(props) {
   return (
-    <div className="absolute top-0 left-0 translate-y-[-100%]  group-hover/item:translate-y-0 bg-[#1e6853]/80 duration-300  ease-in delay-75  backdrop-opacity-100 backdrop-blur-xl h-full p-4 group-hover/item:transition-all w-full grayscale-1 leading-6 overflow-y-scroll scrollbar-hide py-4">
+    <div className="absolute top-0 left-0 translate-y-[-100%]  group-hover/item:translate-y-0 bg-[#1e6853] duration-300  ease-in delay-75  backdrop-opacity-100 backdrop-blur-xl h-full p-4 group-hover/item:transition-all w-full grayscale-1 leading-6 overflow-y-scroll scrollbar-hide py-4">
       {props.children}
     </div>
   );
