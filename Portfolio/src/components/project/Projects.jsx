@@ -59,8 +59,7 @@ function Projects() {
         img2={weather_2}
         about=" Full responsive Weather app, that forecasts current, Daily,
         Hourly Weather details"
-        challenge="Representing Daily weather data on graph was bit challenging,
-        however figuring out and learning rechars was fun."
+        challenge="A bit of difficulty was encountered when displaying daily weather data on a graph, however learning how to represent data on a graph with Recharts was a great experience."
       />
       <Project
         number="02."
@@ -69,8 +68,8 @@ function Projects() {
         link2="https://recipe-8cf96.web.app/"
         img1={recipe_2}
         img2={recipe_3}
-        about="Recipe is a single page application created using React Js. Renders different kinds of popular and vegetarian recipes with detailed instructions and all ingredients needed to prepare each item"
-        challenge="Layout part was bit challenging but framer motion made it less difficult"
+        about="Recipe is a single page application developed using React Js. Recipe is a single page application developed using React Js. Featured in this application is a collection of popular vegetarian recipes along with step-by-step instructions and the ingredients required to prepare them."
+        challenge="Layout part was a bit challenging but With its helpful visual tools, Framer Motion made the otherwise challenging task of layout design much easier."
       />
 
       <Project
@@ -80,7 +79,7 @@ function Projects() {
         link2="https://memory---game.web.app"
         img1={memory_1}
         img2={memory_2}
-        about="The game starts with all the cards facing down. Player need to find the matching pair of cards until all the similar pair of cards are found"
+        about="The game starts with all the cards facing down. To win the game, players must remember where certain pairs were located, and use that knowledge to find other pairs of cards quickly."
         challenge="coming up with the logic was the difficult part."
       />
 
@@ -91,8 +90,8 @@ function Projects() {
         link2="https://quotes-bb6b0.web.app/allQuotes"
         img1={quote_1}
         img2={quote_2}
-        about="Quotes is a Single page application created using React js. It has features of adding new quote and comment on a respective quote, allows to add new quote, stores the data on firebase and fetch data whenever needed."
-        challenge="I have learnt react routers following a tutorial, this porject is a part of learning process. Understaing the routes was bit confusing but it was fun learning."
+        about="Quotes is a single page application created using ReactJS. A user can add a new quote and comment on existing quotes, store data on Firebase, and retrieve data as needed."
+        challenge="As part of my learning process, I have learnt react routers from a tutorial, and this project is part of that learning. I found understanding the routes to be a little difficult, but I enjoyed learning them."
       />
 
       <Project
@@ -102,8 +101,8 @@ function Projects() {
         link2="https://twitter-clone-6f949.web.app/signin"
         img1={twitter_1}
         img2={twitter_2}
-        about=" In case you want to check insides of the project, i have created dummy login credentails, email = itachi@gmail.com //password = itachi@123, to login to twitter-clone "
-        challenge="From layout to using firebase as backend everything about this project was challenging. I followed few tutorial on how to use firebase database. Nested routes particulary the profile page was difficult, i followed react routers documentation, which helped me to stucture the page as i wanted."
+        about=" You can use these credentials to log in and explore the project further - email: itachi@gmail.com and password: itachi@123."
+        challenge="It was a challenging project, from its layout to the use of Firebase as the backend. Despite the difficulty, I was able to make the page look the way I wanted by reading the react router documentation and exploring Firebase tutorials."
       />
     </section>
   );

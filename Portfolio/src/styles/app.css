@@ -1059,10 +1059,6 @@ h3 {
 @media screen and (min-width: 1280px) {
 }
 
-section {
-  /* padding-bottom: 20px !important; */
-}
-
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }

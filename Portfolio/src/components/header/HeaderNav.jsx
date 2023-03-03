@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../Images/logo.png";
-import resume from "../../Images/bhavani.pdf";
+import resume from "../../Images/Bhavani-resume-1.pdf";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function HeaderNav() {
@@ -28,10 +28,11 @@ function HeaderNav() {
             </Link>
             <li className="rounded-sm bg-[#cbb383]/80 text-[#12372d] px-2 py-1 hover:cursor-pointer hover:bg-[#c6ac77]  ">
               <a
-                href={resume}
                 className="flex items-center gap-2"
-                target="_blank"
+                href={resume}
                 download={resume}
+                target="_blank"
+                // download
               >
                 <span>Resume</span>
                 <svg
