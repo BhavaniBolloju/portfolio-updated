@@ -9,6 +9,8 @@ import quote_1 from "../../Images/quote-1.png";
 import quote_2 from "../../Images/quotes-2.png";
 import twitter_1 from "../../Images/twitter-1.png";
 import twitter_2 from "../../Images/twitter-2.png";
+import shopcart_1 from "../../Images/shop-cart-1.png";
+import shopcart_2 from "../../Images/shop-cart-mobile-1.png";
 
 import {
   OuterBox,
@@ -103,6 +105,16 @@ function Projects() {
         img2={twitter_2}
         about=" You can use these credentials to log in and explore the project further - email: itachi@gmail.com and password: itachi@123."
         challenge="It was a challenging project, from its layout to the use of Firebase as the backend. Despite the difficulty, I was able to make the page look the way I wanted by reading the react router documentation and exploring Firebase tutorials."
+      />
+      <Project
+        number="06."
+        heading="Shop Cart"
+        link1="https://github.com/BhavaniBolloju/E-commerce"
+        link2="https://e-commerce-ac3a5.web.app/"
+        img1={shopcart_1}
+        img2={shopcart_2}
+        about="E-commerce website allow users to add items to the cart, save items and place an order by signing in. You can use these credentials to log in and explore the project further - email: newuser@gmail.com and password: newuser@123"
+        challenge="It was challenging to use firebase to store and retrieve data along with redux, even though I got to learn redux thunks in the process. It was also challenging to arrange the items on the basis of categories."
       />
     </section>
   );
