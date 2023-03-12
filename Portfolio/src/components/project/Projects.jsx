@@ -2,6 +2,8 @@ import React from "react";
 import weather_1 from "../../Images/Weather-app-1.png";
 import weather_2 from "../../Images/Weather-app-2.png";
 import recipe_2 from "../../Images/recipe-2.png";
+import recipe_book1 from "../../Images/recipe-book-1.png";
+import recipe_book2 from "../../Images/recipe-book-mobile.png";
 import recipe_3 from "../../Images/recipe-3.png";
 import memory_1 from "../../Images/memory-1.png";
 import memory_2 from "../../Images/memory-2.png";
@@ -55,7 +57,7 @@ function Projects() {
       <Project
         number="01."
         heading="Weather App"
-        link1="https://github.com/saMruBa/Weather-App"
+        link1="https://github.com/BhavaniBolloju/Weather-App"
         link2="https://user-authentication-e7794.web.app/"
         img1={weather_1}
         img2={weather_2}
@@ -66,18 +68,18 @@ function Projects() {
       <Project
         number="02."
         heading="Recipe"
-        link1="https://github.com/saMruBa/Recipe-App"
-        link2="https://recipe-8cf96.web.app/"
-        img1={recipe_2}
-        img2={recipe_3}
-        about="Recipe is a single page application developed using React Js. Recipe is a single page application developed using React Js. Featured in this application is a collection of popular vegetarian recipes along with step-by-step instructions and the ingredients required to prepare them."
-        challenge="Layout part was a bit challenging but With its helpful visual tools, Framer Motion made the otherwise challenging task of layout design much easier."
+        link1="https://github.com/BhavaniBolloju/Recipe-Book"
+        link2="https://recipe-book-89a8c.web.app/logIn"
+        img1={recipe_book1}
+        img2={recipe_book2}
+        about="Recipe is a single page application developed using React Js. Featured in this application is a collection of popular vegetarian recipes along with step-by-step instructions and the ingredients required to prepare them."
+        challenge="I found the layout part a bit challenging, and adding bookmark functionality so users can save their favorite recipes and store them in Firebase was also a challenge."
       />
 
       <Project
         number="03."
         heading="Memory Game"
-        link1="https://github.com/saMruBa/Memory-game"
+        link1="https://github.com/BhavaniBolloju/Memory-game"
         link2="https://memory---game.web.app"
         img1={memory_1}
         img2={memory_2}
@@ -88,7 +90,7 @@ function Projects() {
       <Project
         number="04."
         heading="Quotes"
-        link1="https://github.com/saMruBa/Quotes"
+        link1="https://github.com/BhavaniBolloju/Quotes"
         link2="https://quotes-bb6b0.web.app/allQuotes"
         img1={quote_1}
         img2={quote_2}
@@ -99,7 +101,7 @@ function Projects() {
       <Project
         number="05."
         heading="Twitter Clone"
-        link1="https://github.com/saMruBa/twitter-clone"
+        link1="https://github.com/BhavaniBolloju/twitter-clone"
         link2="https://twitter-clone-6f949.web.app/signin"
         img1={twitter_1}
         img2={twitter_2}

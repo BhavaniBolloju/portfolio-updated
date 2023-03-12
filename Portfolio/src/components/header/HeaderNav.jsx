@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../Images/logo.png";
-import resume from "../../Images/Bhavani-resume-1.pdf";
+import resume from "../../Images/Bhavani-CV.pdf";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function HeaderNav() {
